@@ -3,8 +3,8 @@
     <h2>This is donate page!</h2>
     <div class="donateList">
       <ul>
-        <li v-for="(donate, index) in donateList" :key="index">
-          <cta-donate :data="donate" />
+        <li v-for="donate in donateList" :key="donate.id">
+          <cta-donate :data="donate" @selected="gotoDonate" />
         </li>
       </ul>
     </div>
@@ -23,7 +23,11 @@ export default {
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    gotoDonate(id) {
+      this.$router.push({ path: `/donate/${id}` });
+    },
+  },
 };
 </script>
 

@@ -13,9 +13,7 @@ export default {
     data: Object,
   },
   data() {
-    return {
-      navbuttons: ['1', '2', '3', '4'],
-    };
+    return {};
   },
 };
 </script>

@@ -7,8 +7,20 @@
       <p>Бързо меню</p>
       <hr />
       <ul>
-        <li v-for="(button, index) in navbuttons" :key="index">
-          {{ button }}
+        <li>
+          <router-link to="/">Начало</router-link>
+        </li>
+        <li>
+          <router-link to="/donate">Дарете</router-link>
+        </li>
+        <li>
+          <router-link to="/about">За нас</router-link>
+        </li>
+        <li>
+          <router-link to="/contacts">Контакти</router-link>
+        </li>
+        <li>
+          <router-link to="/blog">Блог</router-link>
         </li>
       </ul>
     </div>
@@ -81,6 +93,11 @@ div.footerPartTwo ul {
 div.footerPartTwo li {
   margin-top: 0;
   margin-bottom: 5px;
+}
+
+div.footerPartTwo li a {
+  color: white;
+  text-decoration: none;
 }
 
 div.footerPartTwo li:hover {

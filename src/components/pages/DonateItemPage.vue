@@ -13,9 +13,7 @@ export default {
   components: {},
   props: {},
   data() {
-    return {
-      testprops: 'This should be changed',
-    };
+    return {};
   },
   methods: {},
 };
