@@ -1,6 +1,17 @@
 <template>
   <div>
     <h2>This is donate page!</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus,
+      dolores veniam. Laudantium, perferendis veritatis odio ullam placeat
+      consectetur odit totam provident autem necessitatibus fugiat ducimus, iste
+      eveniet architecto, consequatur adipisci! Lorem ipsum dolor sit amet
+      consectetur, adipisicing elit. Accusamus, dolores veniam. Laudantium,
+      perferendis veritatis odio ullam placeat consectetur odit totam provident
+      autem necessitatibus fugiat ducimus, iste eveniet architecto, consequatur
+      adipisci!Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Accusamus, dolores veniam.
+    </p>
     <div class="donateList">
       <ul>
         <li v-for="donate in donateList" :key="donate.id">
@@ -32,9 +43,19 @@ export default {
 </script>
 
 <style scoped>
+div {
+  text-align: center;
+  color: black;
+}
+
 h2 {
   margin-top: 100px;
   color: black;
+}
+
+p {
+  margin: auto;
+  width: 80%;
 }
 
 button.btn-don {

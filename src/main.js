@@ -22,6 +22,7 @@ const router = createRouter({
     { path: '/donate/:itemId', component: DonateItemPage },
   ],
   linkActiveClass: 'nav-active',
+  linkExactActiveClass: 'nav-exact-active',
 });
 
 const app = createApp(App);

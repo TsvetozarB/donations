@@ -76,6 +76,7 @@ a:hover {
 
 li a:hover,
 li a:active,
+a.nav-exact-active,
 a.nav-active {
   color: #f1a80a;
   border-color: #f1a80a;
